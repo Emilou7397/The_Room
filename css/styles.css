@@ -1,0 +1,134 @@
+/* DIAGNOSTIC STYLING */
+
+body {
+    background: gray;
+  }
+
+/* LAYOUT */
+
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+  }
+
+  header {
+    padding: 1em;
+  }
+  
+  header,
+  footer {
+    grid-column: 1 / span 5;
+  }
+  
+  main {
+    grid-column: 1 / span 3;
+  }
+  
+  aside {
+    grid-column: span 2;
+    padding: 0 1em;
+  }
+  
+  @media (max-width: 700px) {
+    
+    main,
+    aside {
+      grid-column: 1 / span 5;
+    }
+    
+  }
+  
+  /* Demo Specific Styles */
+  body {
+    margin: 0 auto;
+    max-width: 60em;
+    padding: 1em;
+  }
+  
+  header,
+  main,
+  aside,
+  footer {
+    background: #eaeaea;
+  }
+  
+  header,
+  footer {
+    min-height: 10vw;;
+  }
+
+/* HEADER */
+
+.word1 {
+  color: dimgray;
+}
+
+.word2 {
+  color: tomato;
+}
+
+/* MAIN */
+
+video {
+  max-width: 100%;
+}
+
+/* Styled Player */
+.mejs__currenttime, 
+.mejs__duration {
+  font-size: 16px;
+}
+
+.mejs__time-current {
+  background: tomato;
+}
+
+/* Actors */
+main section{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+figcaption{
+  width: 120px;
+}
+
+/* ASIDE */
+
+a:link,
+a:visited {
+  color: dimgray;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: tomato;
+}
+
+ul > li {
+  list-style: square;
+}
+
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li img {
+  margin: 0 .5em;
+}
