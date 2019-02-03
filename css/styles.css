@@ -169,6 +169,10 @@ footer li img {
   margin: 0 .5em;
 }
 
+footer p  {
+  color: white;
+}
+
 /* FONTS */
 
 @font-face {
