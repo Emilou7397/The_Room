@@ -113,6 +113,10 @@ figcaption{
 
 /* ASIDE */
 
+aside {
+  height: 12em;
+}
+
 aside p {
   color: #D11;
   font-family: "VI Phu Dung Hoa Medium", sans-serif;
@@ -134,6 +138,14 @@ a:active {
 ul > li {
   list-style: square;
   color: white;
+}
+
+@media (max-width: 700px) {
+  
+  aside {
+    height: 10em;
+  }
+
 }
 
 
