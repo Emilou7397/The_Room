@@ -103,6 +103,14 @@ figcaption{
   font-family: "Barlow", sans-serif;
 }
 
+.actors a:hover {
+  transform: scale(1.1);
+}
+
+.actors a:hover figure figcaption {
+  color: #D11;
+}
+
 /* ASIDE */
 
 aside p {
