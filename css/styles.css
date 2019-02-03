@@ -1,7 +1,7 @@
 /* DIAGNOSTIC STYLING */
 
 body {
-    background: gray;
+    background: black;
   }
 
 /* LAYOUT */
@@ -50,7 +50,7 @@ body {
   main,
   aside,
   footer {
-    background: #eaeaea;
+    background: black;
   }
   
   header,
@@ -60,12 +60,18 @@ body {
 
 /* HEADER */
 
-.word1 {
-  color: dimgray;
+h1  {
+  font-family: "VI Phu Dung Hoa Medium", sans-serif;
+  color: #D11;
+  margin: 0 0 .2em 0;
+  font-size: 3em;
 }
 
-.word2 {
-  color: tomato;
+h5  {
+  font-family: "Barlow", sans-serif;
+  margin: 0;
+  color: white;
+  font-size: 1em;
 }
 
 /* MAIN */
@@ -81,7 +87,7 @@ video {
 }
 
 .mejs__time-current {
-  background: tomato;
+  background: #D11;
 }
 
 /* Actors */
@@ -93,23 +99,33 @@ main section{
 
 figcaption{
   width: 120px;
+  color: white;
+  font-family: "Barlow", sans-serif;
 }
 
 /* ASIDE */
 
+aside p {
+  color: #D11;
+  font-family: "VI Phu Dung Hoa Medium", sans-serif;
+  font-size: 1em;
+}
+
 a:link,
 a:visited {
-  color: dimgray;
+  color: white;
   text-decoration: none;
+  font-family: "Barlow", sans-serif;
 }
 
 a:hover,
 a:active {
-  color: tomato;
+  color: #D11;
 }
 
 ul > li {
   list-style: square;
+  color: white;
 }
 
 
@@ -132,3 +148,11 @@ footer li {
 footer li img {
   margin: 0 .5em;
 }
+
+/* FONTS */
+
+@font-face {
+  font-family: "VI Phu Dung Hoa Medium";
+  src: url("/fonts/VI-Phu-Dung-Hoa-Medium.ttf");
+  src: url("/fonts/VI-Phu-Dung-Hoa-Medium.woff") format("woff");
+  }
